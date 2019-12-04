@@ -1,0 +1,15 @@
+current directory: /Users/tabata-katsutoshi/freee-work/study/study_cap/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.1/ext/websocket-driver
+/Users/tabata-katsutoshi/.anyenv/envs/rbenv/versions/2.6.5/bin/ruby -I /Users/tabata-katsutoshi/.anyenv/envs/rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20191204-43006-1ekat5p.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tabata-katsutoshi/freee-work/study/study_cap/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/tabata-katsutoshi/freee-work/study/study_cap/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/tabata-katsutoshi/freee-work/study/study_cap/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20191204-43006-1ovvfgl

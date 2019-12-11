@@ -19,15 +19,5 @@ namespace :deploy do
     end
   end
 
-  namespace :assets do
-    desc 'Run the precompile task locally and rsync the assets'
-    task :precompile do
-      Rake.sh "npm install --prefix .local-yarn -g yarn@1.2"
-      Rake.sh '.local-yarn/bin/yarn install'
-      Rake.sh '.local-yarn/bin/yarn run build'
-      raise 'ERROR: yarn install or yarn run build failed at deploy:assets:precompile !' unless $?.success?
-      Rake.sh "RAILS_ENV=#{fetch(:rails_env)} bundle exec rake assets:precompile"
-    end
-  end
   after  :finished, :nginx_restart
 end

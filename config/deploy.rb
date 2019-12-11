@@ -1,11 +1,9 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.2"
-set :application, "test_deploy"
+set :application, "study_cap"
 
-# 指定のディレクトリのシンボルを作成
 set :linked_dirs, %w(log)
 
-# デプロイ先の指定
 set :deploy_to, "/home/ec2-user/test-deploy"
 
 # 指定のディレクトリのシンボルを作成

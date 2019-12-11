@@ -27,7 +27,9 @@ install_plugin Capistrano::SCM::Git
 #   https://github.com/capistrano/passenger
 #
 # require "capistrano/rvm"
-require "capistrano/rbenv"
+require "capistrano/rbenv" # rbenv使うなら必要
+set :rbenv_type, :user # ADDED
+set :rbenv_ruby, '2.6.5' # ADDED
 # require "capistrano/chruby"
 require "capistrano/bundler"
 require "capistrano/rails/assets"
@@ -35,7 +37,7 @@ require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 require 'capistrano/ssh_doctor'
 
-require 'capistrano/puma'
+require 'capistrano/puma' # 今回はpumaでやったる
 install_plugin Capistrano::Puma  # Default puma tasks
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
